@@ -29,7 +29,7 @@ var brandMessageBubbleColors = function (bgColor) {
     }
 };
 
-var brandedColors = {
+brandedColors = {
     Chat: {
         MessageListItem: {
             FromOthers: brandMessageBubbleColors(brandColor2),

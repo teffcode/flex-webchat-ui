@@ -6,10 +6,12 @@
     "@twilio/flex-webchat-ui": "^2.0.0",
     "array-findindex-polyfill": "^0.1.0",
     "ie-array-find-polyfill": "^1.1.0",
+    "prop-types": "^15.8.1",
     "react": "^16.5.2",
     "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.5.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-to-webcomponent": "^1.7.6"
   },
   "scripts": {
     "start": "react-app-rewired start",

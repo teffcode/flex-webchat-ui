@@ -4,14 +4,17 @@ import 'react-app-polyfill/stable';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'regenerator-runtime/runtime';
+//import 'regenerator-runtime/runtime';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import reactToWebComponent from 'react-to-webcomponent'
 
-ReactDOM.render(
-    <App configuration={window.appConfig} />,
-    document.getElementById("root")
-);
+customElements.define('webchat-experiment', reactToWebComponent(App, React, ReactDOM))
 
-registerServiceWorker();
+//ReactDOM.render(
+//   <App configuration={window.appConfig} />,
+//    document.getElementById("root")
+//);
+
+//registerServiceWorker();
